@@ -4,8 +4,7 @@ export async function POST(req: Request) {
   const { name, email, phone } = await req.json();
 
   try {
-    // Your Zapier webhook URL
-    const zapierWebhook = "https://hooks.zapier.com/hooks/catch/XXXXX/YYYYY/";
+    const zapierWebhook = "#";
 
     await fetch(zapierWebhook, {
       method: "POST",
