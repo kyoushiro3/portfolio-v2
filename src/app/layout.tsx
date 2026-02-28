@@ -7,6 +7,7 @@ import Loader from "@/components/loader";
 import ScreenReveal from "@/components/loader";
 import LoaderWrapper from "@/components/loader/loader-wrapper";
 import CustomCursor from "@/components/animations/customCursor";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,7 @@ export default function RootLayout({
         <NavBar/>
         {children}
         <Footer/>
+        <Analytics/>
       </body>
     </html>
   );
