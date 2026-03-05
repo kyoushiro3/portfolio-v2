@@ -11,8 +11,8 @@ export default function Footer() {
         rowSpans={[1, 1, 1, 1]}
         borders="border-white/15 divide-x divide-white/15 border-y"
       >
-        <div className="grid grid-cols-1 divide-y divide-white/15">
-          <div className="px-6 py-5">
+        <div className="grid grid-cols-1 grid-rows-4 divide-y divide-white/15">
+          <div className="px-6 py-5 row-span-3">
             <div className="pb-5">
               <Image
                 src={"/kai-logo.svg"}
@@ -34,10 +34,12 @@ export default function Footer() {
             </span>
           </div>
         </div>
-        <div className="grid grid-cols-1 divide-y divide-white/15">
+
+        
+        <div className="grid grid-cols-1 grid-rows-4 divide-y divide-white/15">
           {links.map((link, i) => (
             <div
-              className="flex justify-between px-6 py-5 text-xs uppercase tracking-widest text-white font-mono"
+              className="flex row-span-1 justify-between px-6 py-5 text-xs uppercase tracking-widest text-white font-mono"
               key={i}
             >
               {link.name}
@@ -51,7 +53,7 @@ export default function Footer() {
           <div className="px-6 py-5 text-xs uppercase tracking-widest text-white font-mono">
             Follow on
           </div>
-          <div className="grid grid-cols-1">
+          {/* <div className="grid grid-cols-1">
             {socials.map((social) => {
               const Icon = social.icon;
 
@@ -65,7 +67,7 @@ export default function Footer() {
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
         <div className="px-6 py-5 text-xs uppercase tracking-widest text-white font-mono">
           Creating experiences that balance aesthetics, usability, and intent.

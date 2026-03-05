@@ -22,7 +22,7 @@ export default function StatsSection() {
             className={`${jakarta.className} font-bold transition-colors duration-300
                         text-5xl sm:text-6xl md:text-7xl lg:text-8xl`}
           >
-            <NumAnimation num={62} />+
+            <NumAnimation num={10} />+
           </h2>
           <p className="text-xs uppercase tracking-widest font-mono transition-colors duration-300">
             Projects
@@ -55,7 +55,7 @@ export default function StatsSection() {
             className={`${jakarta.className} font-bold transition-colors duration-300
                         text-5xl sm:text-6xl md:text-7xl lg:text-8xl`}
           >
-            <NumAnimation num={3} />+
+            <NumAnimation num={2} />+
           </h2>
           <p className="text-xs uppercase tracking-widest font-mono transition-colors duration-300">
             Years Experience
