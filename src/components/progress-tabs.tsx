@@ -81,7 +81,7 @@ export default function AutoProgressTabs() {
               </button>
 
               {/* MOBILE CONTENT */}
-              <AnimatePresence mode="wait">
+              <AnimatePresence>
                 {isActive && (
                   <motion.div
                     key={active}
@@ -128,7 +128,7 @@ export default function AutoProgressTabs() {
       {/* DESKTOP CONTENT */}
       <div className="hidden md:block">
         <div className="bg-[#b1c5ce] rounded-2xl p-6 aspect-video flex flex-col gap-6">
-          <AnimatePresence mode="wait">
+          <AnimatePresence>
             <motion.p
               key={`subtitle-${active}`}
               initial={{ opacity: 0, y: 16 }}

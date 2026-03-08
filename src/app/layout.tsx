@@ -29,10 +29,11 @@ export const metadata: Metadata = {
   title: "Kim Darren | WebDev & Automations",
   description:
     "I design and develop scalable websites, automation systems, and funnels using modern technologies.",
+  metadataBase: new URL("https://kimdarren.com"),
   icons: {
-    icon: "/icons/favicon.ico",
-    shortcut: "/icons/favicon-32x32.png",
-    apple: "/icons/apple-touch-icon.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Kim Darren | WebDev & Automations",
