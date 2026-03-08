@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kimdarren.com
+
+# Sitemaps
+Sitemap: https://kimdarren.com/sitemap.xml

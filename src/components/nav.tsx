@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { links } from "@/data/navbar";
 import { useState } from "react";
-import { Host_Grotesk, Plus_Jakarta_Sans, Roboto_Condensed } from "next/font/google";
+import {
+  Host_Grotesk,
+  Plus_Jakarta_Sans,
+  Roboto_Condensed,
+} from "next/font/google";
 import { AnimatePresence, motion } from "motion/react";
 import {
   CircleChevronRight,
@@ -61,8 +65,17 @@ export default function NavBar() {
             })}
           </nav>
 
-                              <CallBookingForm/>
-
+          <a
+            href="https://calendly.com/kimdarrenperalta/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
+            <div className="flex items-center justify-between px-6 py-2 lg:p-4 text-sm text-white font-medium font-mono border-r border-white/15 uppercase">
+              Book a call
+              <CircleChevronRight />
+            </div>
+          </a>
         </div>
 
         <div className="flex lg:hidden justify-between items-center p-4 border-x border-white/15">
@@ -74,12 +87,26 @@ export default function NavBar() {
               alt="kai-logo"
             />
           </div>
-          <button
-            onClick={() => setOpen((prev) => !prev)}
-            className="text-white font-mono"
-          >
-            {open ? <SquareChevronUp /> : <SquareChevronDown />}
-          </button>
+          <div className="flex flex-row items-center gap-2">
+            <a
+              href="https://calendly.com/kimdarrenperalta/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <div className="flex items-center justify-between px-6 py-2 lg:p-4 text-sm text-white font-medium font-mono uppercase">
+                Book a call
+               
+              </div>
+            </a>
+
+            <button
+              onClick={() => setOpen((prev) => !prev)}
+              className="text-white font-mono"
+            >
+              {open ? <SquareChevronUp /> : <SquareChevronDown />}
+            </button>
+          </div>
         </div>
 
         <AnimatePresence>
@@ -115,7 +142,17 @@ export default function NavBar() {
                     );
                   })}
                 </div>
-               <CallBookingForm/>
+                <a
+                  href="https://calendly.com/kimdarrenperalta/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  <div className="flex items-center justify-between px-6 py-2 lg:p-4 text-sm text-white font-medium font-mono border-r border-white/15 uppercase">
+                    Book a call
+                    <CircleChevronRight />
+                  </div>
+                </a>
               </div>
             </motion.div>
           )}

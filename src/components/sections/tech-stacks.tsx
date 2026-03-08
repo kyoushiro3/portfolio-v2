@@ -1,9 +1,5 @@
 "use client";
 
-import { Plus_Jakarta_Sans } from "next/font/google";
-import HorizontalScrollCards from "../horizontal-scroll-cards";
-import PanelSelection from "../panelselection";
-import { useState } from "react";
 import {
   CanvaOriginalIcon,
   DjangoPlainIcon,
@@ -13,17 +9,19 @@ import {
   MongodbPlainIcon,
   NextjsPlainIcon,
   NotionPlainIcon,
-  PhotoshopOriginalIcon,
   PhotoshopPlainIcon,
-  ReachOriginalIcon,
+  PostmanPlainIcon,
   ReactOriginalIcon,
-  ReactrouterPlainIcon,
   SupabasePlainIcon,
   TailwindcssOriginalIcon,
   TypescriptPlainIcon,
+  VercelOriginalIcon,
   WordpressPlainIcon,
 } from "@devicon/react";
 import { FramerLogoIcon } from "@phosphor-icons/react/dist/ssr";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import { useState } from "react";
+import PanelSelection from "../panelselection";
 
 const jakarta = Plus_Jakarta_Sans({
   weight: "700",
@@ -67,8 +65,10 @@ export default function TechStacksSection() {
     { id: 13, name: "Canva", icon: CanvaOriginalIcon, category: "Design" },
     { id: 11, name: "Git", icon: GitPlainIcon, category: "Tools" },
     { id: 12, name: "Framer", icon: FramerLogoIcon, category: "Design" },
-    { id: 14, name: "Git", icon: NotionPlainIcon, category: "Tools" },
-    { id: 15, name: "Git", icon: WordpressPlainIcon, category: "Tools" },
+    { id: 14, name: "Notion", icon: NotionPlainIcon, category: "Tools" },
+    { id: 15, name: "Wordpress", icon: WordpressPlainIcon, category: "Tools" },
+    { id: 16, name: "Vercel", icon: VercelOriginalIcon, category: "Tools" },
+    { id: 17, name: "Postman", icon: PostmanPlainIcon, category: "Tools" },
   ]);
   const grouped = cards.reduce(
     (acc, card) => {

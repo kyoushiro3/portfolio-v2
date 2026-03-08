@@ -1,30 +1,23 @@
-import PanelSelection from "@/components/panelselection";
-import { Roboto_Condensed } from "next/font/google";
-import TwoPanelCard from "@/components/twoPanelCard";
-import List from "@/components/list";
-import { Circle, EggFried, Globe, Shell } from "lucide-react";
-import Testimonials from "@/components/testimonials";
-import FAQs from "@/components/faqs";
 import Hero from "@/components/hero";
-import WorksSection from "@/components/sections/works";
 import WorkSection from "@/components/works/stacking-cards";
-import AboutSection from "@/components/sections/about";
 import StatsSection from "@/components/sections/stats-section";
 import ProcessSection from "@/components/sections/process";
-import GridDraggableCards from "@/components/grid-draggablecards";
 import HorizontalScrollCards from "@/components/horizontal-scroll-cards";
 import HeroAnimation from "@/components/hero-animation";
-import Image from "next/image";
-import ServicesSection from "@/components/sections/services";
 import AboutMe from "@/components/sections/about-me";
 import TechStacksSection from "@/components/sections/tech-stacks";
-import CallBookingForm from "@/components/form";
+import { Metadata } from "next";
 
-const roboto = Roboto_Condensed({
-  weight: "700",
-  variable: "--font-roboto",
-  subsets: ["latin"],
-});
+export const metadata: Metadata = {
+  title: "Kim Darren | WebDev & Automations",
+  description:
+    "I design and develop scalable websites, automation systems, and funnels using modern technologies.",
+  openGraph: {
+    title: "Kim Darren | WebDev & Automations",
+    description: "Web development & automation solutions for businesses.",
+    images: ["/og-image.png"],
+  },
+};
 
 export default function Home() {
   return (

@@ -25,10 +25,21 @@ const sora = Sora({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
-  title: "Kim Darren | Hire Me",
-  description: "Kim Darren's Portfolio",
+  title: "Kim Darren | WebDev & Automations",
+  description:
+    "I design and develop scalable websites, automation systems, and funnels using modern technologies.",
+  icons: {
+    icon: "/icons/favicon.ico",
+    shortcut: "/icons/favicon-32x32.png",
+    apple: "/icons/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Kim Darren | WebDev & Automations",
+    description:
+      "Web development and automation systems built with modern technologies.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -38,6 +49,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: `{
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Kim Darren",
+            "url": "https://kimdarren.com",
+            "jobTitle": "Web Developer & Automation Specialist",
+            "image": "https://kimdarren.com/icons/logo.png",
+            "email": "mailto:kimdarren@gmail.com",
+            "sameAs": [ 
+              "https://www.linkedin.com/in/kim-darren-peralta/",
+              "https://github.com/kyoushiro3"
+            ]
+          }`}}
+        />
+      </head>
       <body
         className={`${sora.className} antialiased`}
                 // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
