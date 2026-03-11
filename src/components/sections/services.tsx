@@ -26,10 +26,10 @@ export default function ServicesSection() {
             <span className="block">My Services</span>
           </div>
         </div>
-        <div/>
+        <div />
       </PanelSelection>
       <div className="">
-              <HorizontalScrollCards />
+        <HorizontalScrollCards />
       </div>
     </div>
   );

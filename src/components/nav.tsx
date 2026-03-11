@@ -103,6 +103,7 @@ export default function NavBar() {
             <button
               onClick={() => setOpen((prev) => !prev)}
               className="text-white font-mono"
+              aria-label="nav-bar dropdown"
             >
               {open ? <SquareChevronUp /> : <SquareChevronDown />}
             </button>
